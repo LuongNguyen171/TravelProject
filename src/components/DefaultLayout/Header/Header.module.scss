@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    background-color: var(--primary);
+    font-size: 11px;
+    font-weight: 700;
+    height: var(--height-header);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+
+.page {
+    display: flex;
+    justify-content: space-around;
+
+    flex: 1;
+}
+
+.logo {
+    height: 100%;
+    img {
+        height: 100%;
+    }
+}
+
+.user-action {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search {
+    height: 15px;
+}
