@@ -10,7 +10,7 @@
     font-weight: 700;
     height: var(--height-header);
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header a {
@@ -27,19 +27,22 @@
     flex: 1;
 }
 
-.logo {
-    height: 100%;
-    img {
-        height: 100%;
-    }
-}
+// .logo {
+//     height: 100%;
+//     img {
+//         height: 100%;
+//     }
+// }
 
 .user-action {
-    width: 40%;
+    width: 30%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
+    margin-right: 8%;
 }
 
 .search {
+    margin-top: 5px;
     height: 15px;
+    padding-left: 50px;
 }

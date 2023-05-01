@@ -36,10 +36,19 @@ function Header({ className }) {
                     <a>
                         <span>LIFE</span>
                     </a>
+                    <a>
+                        <span>MOTHERHOOD</span>
+                    </a>
+                    <a>
+                        <span>INSPIRE ME</span>
+                    </a>
+                    <a>
+                        <span>SHOP</span>
+                    </a>
                 </div>
-                <div className={cx('logo')}>
+                {/* <div className={cx('logo')}>
                     <img src="https://cungdulich.com.vn/image/cache/catalog/logo/watermarkproshow-logo-web-400x300.png"></img>
-                </div>
+                </div> */}
                 <div className={cx('user-action')}>
                     <Button btnLogin small onClick={handleStateLogin}>
                         Login
