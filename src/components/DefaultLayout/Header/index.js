@@ -21,7 +21,7 @@ function Header({ className }) {
         handleLogin(isLogin);
     };
     return (
-        <aside className={cx('wrapper', className)}>
+        <div className={cx('wrapper', className)}>
             <header className={cx('header')}>
                 <div className={cx('page')}>
                     <a>
@@ -46,9 +46,7 @@ function Header({ className }) {
                         <span>SHOP</span>
                     </a>
                 </div>
-                {/* <div className={cx('logo')}>
-                    <img src="https://cungdulich.com.vn/image/cache/catalog/logo/watermarkproshow-logo-web-400x300.png"></img>
-                </div> */}
+
                 <div className={cx('user-action')}>
                     <Button btnLogin small onClick={handleStateLogin}>
                         Login
@@ -61,7 +59,7 @@ function Header({ className }) {
                     </div>
                 </div>
             </header>
-        </aside>
+        </div>
     );
 }
 
