@@ -36,13 +36,13 @@ function Header({ className }) {
                     <a>
                         <span>LIFE</span>
                     </a>
-                    <a>
+                    <a href='/motherhood'>
                         <span>MOTHERHOOD</span>
                     </a>
                     <a>
                         <span>INSPIRE ME</span>
                     </a>
-                    <a>
+                    <a href='/shop'>
                         <span>SHOP</span>
                     </a>
                 </div>
