@@ -4,24 +4,33 @@
 .layout-default {
     position: relative;
     flex-direction: column;
-    height: 2000px;
+    
 }
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 1000;
 }
 
-.content {
-    margin-top: var(--height-header);
-    // z-index: 1;
-}
 .login {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.info{
+    background-color: black;
+    height: 68px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site{
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
 }

@@ -24,10 +24,10 @@ function Header({ className }) {
         <div className={cx('wrapper', className)}>
             <header className={cx('header')}>
                 <div className={cx('page')}>
-                    <a>
+                    <a href='/home'>
                         <span>HOME</span>
                     </a>
-                    <a>
+                    <a href='/about'>
                         <span>ABOUT</span>
                     </a>
                     <a>

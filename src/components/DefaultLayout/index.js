@@ -7,6 +7,7 @@ import Login from '../Login';
 
 import React, { useState } from 'react';
 import UserContext from '../Hook/Context';
+import { useNavigate } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -17,10 +18,19 @@ function DefaultLayout({ children }) {
     };
 
     const isShow = showLogin ? <Login className={cx('login')} /> : null;
+
+    const navigation = useNavigate();
     return (
         <UserContext.Provider value={handleLogin}>
             <div className={cx('wrapper')}>
                 <div className={cx('layout-default')}>
+                    <section className={cx("info")}>
+                        <h1 className={cx("site")}
+                        onClick={() => navigation("/home")}
+                    >
+                            The Travelista
+                    </h1>
+                    </section>
                     <Header className={cx('header')} />
                     <div className={cx('content')}>{children}</div>
                     <Footer className={cx('footer')} />
