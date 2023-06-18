@@ -21,17 +21,22 @@ function Search() {
 
     blogs.forEach((blog) => addData(blog))
 
+    console.log(posts.length)
+
     return (
         <div className={cx('container')}>
             <div className={cx('row')}>
                 <div className={cx('col-7', 'blog')}>
                     <h1 className={cx('tilte-result')}>{`Search result for: ${key}`}</h1>
                     {
-                        posts.map((post, index) => (
+                        (posts.length != 0) && posts.map((post, index) => (
                             <Result key={index}
                                 post = {post}
                             />
-                        ))
+                        )) 
+                    }
+                    {
+                        (posts.length == 0 ) && <p>Sorry, no content matched your criteria.</p>
                     }
                 </div>
                 <aside className={cx('col-3', 'sidebar')}>
