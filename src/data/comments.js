@@ -98,6 +98,21 @@ const comments = [
     },
 ]
 
+const commentsAbout = [
+    {
+        img: "https://secure.gravatar.com/avatar/f80a0f475b85a689bebe23ed827ed488?s=96&d=mm&r=g",
+        name: "LRUTHNUM SAYS",
+        date: "6TH FEBRUARY 2014 AT 1:08 PM",
+        cmt: "I’ve nominated you for The Lighthouse Award – thanks for all your great posts. Find out more here: http://absolutelylucy.wordpress.com/awards/ xx",
+        sub: [
+           {
+                img: "https://secure.gravatar.com/avatar/5368e1b6fab87b050351ea9d790e3980?s=96&d=mm&r=g",
+                name: "THETRAVELISTABLOG SAYS",
+                date: "9TH FEBRUARY 2014 AT 2:24 PM",
+                cmt: "Thanks so much! What a lovely concept x"
+           }
+        ]
+    }
+]
 
-
-export {comments}
+export {comments, commentsAbout}

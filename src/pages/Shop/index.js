@@ -3,11 +3,11 @@ import styles from './shop.module.scss';
 
 const cx = classNames.bind(styles);
 function Shop() {
+    
+
     return (
-        <div className={cx('wrapper')}>
-            <div className={cx('header')}>
-                <h1>Shop My Style</h1>
-            </div>
+        <div className={cx('wrapper-shop')}>
+            <h1 className={cx('shop-title')}>Shop My Style</h1>
             <div className={cx('body')}>
                 <div className={cx('ground')}>
                     <div className={cx('ground_btn')}>

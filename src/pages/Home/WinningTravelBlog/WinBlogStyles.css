@@ -27,6 +27,11 @@
 .card-wining-travel-blogs {
     width: 25%;
 }
+.card-wining-travel-blogs:hover{
+    color: rgb(255, 255, 255);
+    background-color: #f2dace;
+    cursor: pointer;
+}
 .card-title-blogs{
     font-size: 15px;
     font-family: sans-serif;
@@ -43,10 +48,14 @@
     width: 90%;
     height: 70px;
     border: 10px solid white;
+    box-shadow: 2px 2px  2px 2px #f2dace;
     position: relative;
     top: 40px;
     display: flex;
     align-items: center;
+}
+.card-body{
+    
 }
 @font-face {
     font-family: GreyQo;

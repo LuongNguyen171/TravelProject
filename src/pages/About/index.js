@@ -71,11 +71,6 @@ function About() {
                         </div>
                     ))
                 }
-                {/* /* <div className='comment-inner'>
-                        <Comment/>  
-                        <Comment sub={true}/>  
-                </div>
-                    <Comment/>   */}
             </div> 
         </div>
     );

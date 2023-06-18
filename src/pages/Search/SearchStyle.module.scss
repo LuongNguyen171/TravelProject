@@ -6,63 +6,14 @@
 
 .container {
     background-color: #f9f4f2;
+    color: rgb(51,51,51);
 }
 
 .blog {
     flex-grow: 1;
     margin: 0 50px;
-    .blog-header {
-        padding-top: 40px;
-        color: #333;
-        font-size: 15px;
-        margin: 0;
-        text-align: center;
-        .blog-title {
-            font-family: 'essonnes-display', sans-serif, serif;
-            font-size: 38px;
-            font-style: normal;
-            letter-spacing: 1px;
-            line-height: 1.2;
-            text-align: center;
-            font-weight: 900;
-            text-transform: none;
-        }
-        .blog-meta {
-            font-family: 'brandon-grotesque';
-            font-style: normal;
-            padding: 24px 0px 0 0;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 400;
-            margin-bottom: 24px;
-            .blog-time {
-                font-family: 'brandon-grotesque', sans-serif;
-                font-size: 15px;
-                font-style: normal;
-            }
-            a {
-                font-family: 'brandon-grotesque', sans-serif;
-                font-size: 15px;
-                padding: 5px 0;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: 400;
-                letter-spacing: 1px;
-            }
-        }
-    }
-    .blog-content {
-        padding: 30px;
-        background: #fff;
-        color: rgb(51, 51, 51);
-        p{
-            font-size: 15px;
-            font-weight: 300;
-            letter-spacing: 0.5;
-            line-height: 30px;
-            text-align: start;
-        }
-    }
+
+    
 }
 
 .sidebar {
@@ -132,4 +83,19 @@
             }
         }
     }
+}
+
+@font-face {
+    font-family: YesevaOne;
+    src: url(../../assets/YesevaOne-Regular.ttf);
+}
+.tilte-result{
+    font-family: YesevaOne, sans-serif, serif;
+    font-size: 20px;
+    font-weight: 300px;
+    letter-spacing: 1px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0px;
 }

@@ -1,41 +1,38 @@
 import classNames from 'classnames/bind';
-import styles from './DetailBlog.module.scss';
+import styles from './SearchStyle.module.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { blogs } from '~/data/blogs';
 import NotFound from '../NotFound';
+import Result from './Result';
 const cx = classNames.bind(styles);
-function DetailBlog() {
-    const { id } = useParams();
+function Search() {
 
-    const blog = blogs.find((blog) => blog.id == id);
+    const {key} = useParams()
 
-    if (!blog) {
-        return <NotFound/>;
+    let posts = [] 
+
+    const addData = (blog) => {
+        if(blog.title.includes(key) || blog.content.includes(key)){
+            posts.push(blog)
+        }
     }
-    function blogParagraph(content) {
-        const paragraphs = content
-            .split('\n')
-            .map((paragraph, index) => <p key={index}>{paragraph}</p>);
-        return <div>{paragraphs}</div>;
-    }
+
+    blogs.forEach((blog) => addData(blog))
 
     return (
         <div className={cx('container')}>
             <div className={cx('row')}>
                 <div className={cx('col-7', 'blog')}>
-                    <header className={cx('blog-header')}>
-                        <h1 className={cx('blog-title')}>{blog.title}</h1>
-                        <p className={cx('blog-meta')}>
-                            <span className={cx('blog-time')}>{blog.date}</span>
-                            <span> ᛫ </span>
-                            <a href="#">{(blog.comments == 0) ? `ADD A COMMENT` : ` ${blog.comments} Comments`}</a>
-                        </p>
-                    </header>
-                    <div className={cx('blog-content')} id='content'>
-                        <div>{blogParagraph(blog.content)}</div>
-                    </div>
+                    <h1 className={cx('tilte-result')}>{`Search result for: ${key}`}</h1>
+                    {
+                        posts.map((post, index) => (
+                            <Result key={index}
+                                post = {post}
+                            />
+                        ))
+                    }
                 </div>
                 <aside className={cx('col-3', 'sidebar')}>
                     <div className={cx('widget-wrap-1')}>
@@ -63,7 +60,7 @@ function DetailBlog() {
                 </aside>
             </div>
         </div>
-    );
+    )
 }
 
-export default DetailBlog;
+export default Search;
